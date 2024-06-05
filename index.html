@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Build a Survey Form using HTML and CSS</title>
+
+
+    <style>
+
+body {
+            background-color: #cfeabd;
+            font-family: Verdana;
+            text-align: center;
+            margin: 10%;
+        }
+
+form { /*this is for full details background*/
+            background-color:#ccdec0;;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 50px 20px;
+            box-shadow: 20px 50px 50px rgba(157, 177, 161, 0.5);
+            box-shadow: 20px 20px 20px #7e9385;
+        }
+
+.form-control { /*this is for step by atep details*/
+            text-align: left;
+            margin-bottom: 25px;/*when we use this no need to use <br> for html*/
+        }
+
+.form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+.form-control input,
+.form-control select,
+.form-control textarea {
+            border: 1px solid #b7cfc5;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+          /* Styling form-control Radio 
+        button and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+button {
+            background-color: #84b5a3;
+            border: 1px solid #738b84;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>MangoHero Survey Form</h1>
+    <form>
+<div class="form-control">
+    <label >Name</label>
+ 
+    <input placeholder="Enter your name" />
+</div>
+
+<div class="form-control">
+    <label>Email</label>
+   
+    <input placeholder="Enter your Email"/>
+</div>
+
+<div class="form-control">
+    <label>Age</label>
+   
+    <input placeholder="Enter your Age"/>
+</div>
+
+
+<div class="form-control">
+    <label>Which option best describes you?</label>
+   
+    <select>
+        <option >Student</option>
+        <option >Intern</option>
+        <option> Professional</option>
+        <option>Other</option>
+    </select>
+</div>
+
+
+<div class="form-control">
+    <label>
+        Would you recommend MangoHero
+        to a friend?
+    </label>
+   
+    
+    <label>
+        <input type="radio"
+               name="recommed">Yes
+          </input> 
+    </label>
+    
+
+    <label>
+        <input type="radio" id="recommed-2"
+               name="recommed">No
+          </input>
+    </label>
+    
+    <label>
+        <input type="radio" id="recommed-3"
+               name="recommed">Maybe
+          </input>
+    </label>
+
+    <div>
+        <label>Languages and Frameworks known
+            <small>(Check all that apply)</small>
+        </label>
+       
+        <label>
+            <input type="checkbox">C
+              </input>
+          </label>
+        
+        <label>
+            <input type="checkbox">C++
+              </input>
+        </label>
+      
+        <label >
+            <input type="checkbox" >C#
+              </input>
+        </label>
+        
+        <label>
+            <input type="checkbox">Java
+              </input>
+        </label>
+       
+        <label>
+            <input type="checkbox">Python
+              </input>
+        </label>
+        
+        <label>
+            <input type="checkbox">JavaScript
+              </input>
+        </label>
+       
+        <label>
+            <input type="checkbox">React
+              </input>
+        </label>
+      
+        <label>
+            <input type="checkbox">Angular
+              </input>
+        </label>
+    
+        <label>
+            <input type="checkbox">Django
+              </input>
+        </label>
+       
+        <label>
+            <input type="checkbox">Spring
+              </input>
+        </label>
+  
+    </div>
+</div>
+
+<div class="form-control">
+    <label>
+        Any comments or suggestions
+    </label>
+
+  
+    <textarea placeholder="Enter your comment here"></textarea>
+</div>
+
+
+<button type="submit"> Submit </button>
+
+
+</form>
+
+<small> Created by Rasadhi Sanchala <br> owner of MangoHero</small>
+</body>
+</html>
